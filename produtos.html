@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clube do Hamburguer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- item que será usado como modelo - clone  -->
+        <div class="models">
+            <div class="products-area-item">
+                <a href="">
+                    <div class="products-area-item-image"><img src="" /></div>
+                    <div class="products-area-item-add"><i class="fas fa-plus-circle"></i></div>
+                </a>
+                <div class="products-area-item-price"></div>
+                <div class="products-area-item-name"></div>
+                <div class="products-area-item-description"></div>
+            </div>
+            <!-- itens do carrinho -->
+            <div class="cart-area-item">
+                <div class="cart-area-item-top">
+                    <div class="cart-area-item-top-img"><img src="" /></div>
+                    <div class="cart-area-item-top-title"></div>
+                    <div class="cart-area-item-top-price"></div>
+                </div>
+                <div class="cart-area-item-bottom">
+                    <div class="cart-area-item-bottom-delete"><i class="fas fa-trash-alt"></i></div>
+                    <div class="cart-area-item-bottom-decrement"><i class="fas fa-minus-circle"></i></div>
+                    <div class="cart-area-item-bottom-quantity"></div>
+                    <div class="cart-area-item-bottom-increment"><i class="fas fa-plus-circle"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- modelo modal -->
+        <div class="modal">
+            <div class="modal-area">
+                <div class="modal-area-image"><img src="" /></div>
+                <div class="modal-area-info">
+                    <div class="modal-close"> x </div>
+                    <div class="modal-area-info-title"></div>
+                    <div class="modal-area-info-description"></div>
+                    <div class="modal-area-info-quantity">
+                        <div class="modal-area-info-quantity-decrement"><i class="fas fa-minus-circle"></i></i></div>
+                        <div class="modal-area-info-quantity-item"></div>
+                        <div class="modal-area-info-quantity-increment"><i class="fas fa-plus-circle"></i></div>
+                    </div>
+                    <div class="modal-area-info-price"></div>
+                    <div class="modal-area-info-action">
+                        <div class="modal-area-info-action-addCart">Adicionar</i></div>
+                        <div class="modal-area-info-action-cancel">Cancelar</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header id="index">
+            <div class="header-logo"><i class="fas fa-hamburger"></i>
+                <h1>Hamburgueria</h1>
+            </div>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="index.html#quemsomos">Quem somos</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="index.html#quemsomos">Atendimento</a></li>
+                    <li><a href="index.html#quemsomos">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="header-nav-mobile">Menu Mobile</div>
+            <div class="header-cart-mobile"> Mobile</div>
+        </header>
+
+        <div class="main">
+            <div class="products-area"></div>
+            <div class="cart-area">
+                <div class="cart-area-items">
+                </div>
+                <div class="cart-area-invoice">
+                    <div class="cart-area-invoice-subtotal"></div>
+                    <div class="cart-area-invoice-discount"></div>
+                    <div class="cart-area-invoice-total"></div>
+                </div>
+                <div class="cart-area-paymentForm">
+                    <label for="Dinheiro">Dinheiro</label>
+                    <input type="radio" id="Dinheiro" name="payments" />
+                    <label for="Debito">Debito</label>
+                    <input type="radio" id="Debito" name="payments" />
+                    <label for="Credito">Credito</label>
+                    <input type="radio" id="Credito" name="payments" />
+                </div>
+                <div class="cart-area-action">Finalizar pedido</div>
+            </div>
+        </div>
+        <script type="text/javascript" src="produtcs.js"></script>
+        <script type="text/javascript" src="module_cart.js"></script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburgueria</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header id="index">
+            <div class="header-logo"><i class="fas fa-hamburger"></i>
+                <h1>Hamburgueria</h1>
+            </div>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="#index">Início</a></li>
+                    <li><a href="#quemsomos">Quem somos</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="#quemsomos">Atendimento</a></li>
+                    <li><a href="#quemsomos">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="header-nav-mobile">Menu Mobile</div>
+            <div class="header-cart-mobile"> Mobile</div>
+        </header>
+
+        <main>
+            <section class="banner">
+                <div class="bannerOpacity">
+                    <button class="btnSlider" onclick="changePhoto(-1)"> <
+                    </button>
+                    <h1>Ótimos hamburgueres, os melhores ingredientes <br> <span> a melhor qualidade e o melhor
+                            preço!</span></h1>
+                    <button class="btnSlider" onclick="changePhoto(1)"> > </button>
+                </div>
+            </section>
+
+            <section class="quemsomos" id="quemsomos">
+                <h1>Quem somos</h1>
+                <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis auctor dui ac porta.
+                    Praesent porttitor dolor varius pellentesque ullamcorper. Cras eu elementum augue. Vestibulum ex
+                    est, lobortis at pretium ut, sollicitudin in lorem. Vestibulum a metus elit. Aenean ante orci,
+                    convallis at nisi at, cursus consectetur felis. Nullam vulputate tellus nisl, a tristique dui
+                    lobortis vel. <br><br>
+
+                    Duis scelerisque vel nunc sollicitudin sollicitudin. Aenean ultrices mollis maximus. Vestibulum
+                    accumsan fringilla nisl nec scelerisque. Phasellus vel ultricies neque, sit amet condimentum dui.
+                    Suspendisse ut odio aliquam, convallis felis et, rutrum tellus. Curabitur cursus leo eget risus
+                    euismod accumsan in quis nunc. Suspendisse ut purus interdum, sodales mauris at, blandit justo.
+                    Morbi vitae neque consequat, efficitur erat id, consectetur lorem. Proin metus elit, sollicitudin
+                    sed pretium ac, iaculis quis diam. Cras ut purus vestibulum, auctor mauris ac, imperdiet elit.
+                    Nullam tempor facilisis nisi, sed laoreet nibh elementum eu. Sed dictum dignissim massa, ut sagittis
+                    enim iaculis. <br><br>
+
+                    Morbi sit amet eros turpis. Mauris scelerisque hendrerit mollis. Aenean in dui ultrices enim
+                    sollicitudin sagittis et non tortor. Cras nec dui non risus feugiat accumsan eu id sapien. Ut
+                    maximus, est dignissim euismod tincidunt, ante neque aliquam lectus, sit amet egestas ligula libero
+                    ornare lectus. Donec quis luctus lacus, non tincidunt libero. Integer sodales sem odio, vel
+                    sollicitudin elit pulvinar quis. Orci varius natoque penatibus et magnis dis parturient montes,
+                    nascetur ridiculus mus. <br><br>
+
+                    Morbi sit amet eros turpis. Mauris scelerisque hendrerit mollis. Aenean in dui ultrices enim
+                    sollicitudin sagittis et non tortor. Cras nec dui non risus feugiat accumsan eu id sapien. Ut
+                    maximus, est dignissim euismod tincidunt, ante neque aliquam lectus, sit amet egestas ligula libero
+                    ornare lectus. Donec quis luctus lacus, non tincidunt libero. Integer sodales sem odio, vel
+                    sollicitudin elit pulvinar quis. Orci varius natoque penatibus et magnis dis parturient montes,
+                    nascetur ridiculus mus. <br><br>
+                </p>
+            </section>
+        </main>
+    </div>
+    <script type="text/javascript" src="module_slider.js"></script>
+</body>
+
+</html>
